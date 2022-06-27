@@ -12,7 +12,7 @@ $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
-$message = "Email send by: " . $name. " \r\n";
+$message = "Reservation name: " . $name. " \r\n";
 $message .= "Email: " . $mail. " \r\n";
 $message .= "Phone: " . $phone. " \r\n";
 $message .= "date: " . $date. " \r\n";
@@ -24,6 +24,6 @@ $message .= "Send date" . date('d/m/Y', time());
 $para = "sistec.int@gmail.com";
 $asunto = 'Resservation web site';
 mail($para, $asunto, utf8_decode($message), $header);
-include 'http://sistecint.com';
+include 'https://avantikapty.com';
 
 ?>
