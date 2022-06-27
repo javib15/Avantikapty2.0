@@ -1,17 +1,16 @@
 <?php
 $name = $_POST['name'];
 $mail = $_POST['email'];
-$message = $_POST['phone'];
-$message = $_POST['date'];
-$message = $_POST['people'];
-$message = $_POST['time'];
+$phone = $_POST['phone'];
+$date = $_POST['date'];
+$people = $_POST['people'];
+$time = $_POST['time'];
 $message = $_POST['message'];
 
 $header = 'From: ' . $mail. " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
-
 $message = "Email send by: " . $name. " \r\n";
 $message .= "Email: " . $mail. " \r\n";
 $message .= "Phone: " . $_POST['phone'] . " \r\n";
