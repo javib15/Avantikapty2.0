@@ -6,19 +6,19 @@ function validarFormulario(evento) {
     evento.preventDefault();
     var name = document.getElementById('name').value;
     if (name.length == 0) {
-        alert('Dejaste el campo nombre en blanco');
+        alert('Please complete name');
         return;
     }
     var email = document.getElementById('email').value;
     if (email.length == 0) {
-        alert('Dejaste el campo Correo electrónico en blanco');
+        alert('Please complete Email');
         return;
     }
-    var message = document.getElementById('message').value;
+    var message = document.getElementById('date').value;
     if (message.length == 0) {
-        alert('Necesitamos conocer que neceistas, por favor completa el campo de mensaje');
+        alert('Please complete reservation date');
         return;
     }
-    alert('Tu mensaje se envío correctamente');
+    alert('Message Send');
     this.submit();
 }

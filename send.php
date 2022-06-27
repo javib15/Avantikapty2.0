@@ -1,6 +1,10 @@
 <?php
 $name = $_POST['name'];
 $mail = $_POST['email'];
+$message = $_POST['phone'];
+$message = $_POST['date'];
+$message = $_POST['people'];
+$message = $_POST['time'];
 $message = $_POST['message'];
 
 $header = 'From: ' . $mail. " \r\n";
@@ -13,10 +17,10 @@ $message .= "Email: " . $mail. " \r\n";
 $message .= "Message: " . $_POST['message'] . " \r\n";
 $message .= "Fue enviado... " . date('d/m/Y', time());
 
-$para = "dcastillero@castlegalabogados.com";
-$asunto = 'Contacto desde web';
+$para = "sistec.int@gmail.com";
+$asunto = 'Resservation web site';
 mail($para, $asunto, utf8_decode($message), $header);
-include 'http://castlegalabogados.com';
+include 'https://avantikapty.com';
 
 
 ?>
