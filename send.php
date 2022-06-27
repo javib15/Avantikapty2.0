@@ -15,9 +15,9 @@ $header .= "Content-Type: text/plain";
 $message = "Email send by: " . $name. " \r\n";
 $message .= "Email: " . $mail. " \r\n";
 $message .= "Phone: " . $phone. " \r\n";
-$message .= "date: " . $_POST['date'] . " \r\n";
-$message .= "people: " . $_POST['people'] . " \r\n";
-$message .= "time: " . $_POST['time'] . " \r\n";
+$message .= "date: " . $date. " \r\n";
+$message .= "people: " . $people. " \r\n";
+$message .= "time: " . $time. " \r\n";
 $message .= "Message: " . $_POST['message'] . " \r\n";
 $message .= "Send date" . date('d/m/Y', time());
 
