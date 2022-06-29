@@ -21,7 +21,7 @@ $message .= "time: " . $time. " \r\n";
 $message .= "Message: " . $_POST['message'] . " \r\n";
 $message .= "Send date" . date('d/m/Y', time());
 
-$para = "sistec.int@gmail.com";
+$para = "avantikapty@gmail.com ";
 $asunto = 'Resservation web site';
 mail($para, $asunto, utf8_decode($message), $header);
 include 'https://avantikapty.com';
