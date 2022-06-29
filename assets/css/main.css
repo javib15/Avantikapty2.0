@@ -4688,13 +4688,14 @@ input, select, textarea {
 		/*overflow-x: hidden;*/
 		gap: 5px;
 		scroll-snap-type: proximity;
+		position: relative;
 	  }
 	  
 	  .slider-container img {
 		flex: 0 0 100%;
 		width: 100%;
-		height: relative;
-		
+		height: 100%;
+		position: relative;
 		object-fit: cover;
 	  scroll-snap-align: center;
 		  
