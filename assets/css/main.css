@@ -2114,6 +2114,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
+		transition-delay: 3ms;
 		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
@@ -2141,6 +2142,7 @@ input, select, textarea {
 		button.next,
 		.button.next {
 			text-decoration: none;
+			transition-delay: 5ms;
 		}
 
 			input[type="submit"].next:before,
@@ -2863,12 +2865,16 @@ input, select, textarea {
 		padding-left: 1rem;
 		padding-bottom: 1rem;
 		align-items: center;
+		transition-delay: 2s;
+		transition-duration: 2ms;
 	}
 
 		ul.actions li {
 			padding: 0 0 0 1rem;
 			vertical-align: middle;
 			position:absolute;
+			transition-delay: 2s;
+		transition-duration: 2ms;
 		}
 
 		ul.actions.special {
@@ -4059,6 +4065,7 @@ input, select, textarea {
 						height: 0.25rem;
 						background-color: #7E3E96;
 						border-radius: 4px;
+						
 					}
 
 					#header > nav > ul > li.active > a {
@@ -4297,7 +4304,7 @@ input, select, textarea {
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/Pad_Thai.jpg");
 		background-size: cover;
 		background-attachment: fixed;
 		background-position: center;
@@ -4322,7 +4329,7 @@ input, select, textarea {
 			position: relative;
 			z-index: 1;
 			margin-top: 2rem;
-			opacity: 1;
+			opacity: 80%;
 		}
 
 			#banner > .content input, #banner > .content select, #banner > .content textarea {
@@ -4403,7 +4410,7 @@ input, select, textarea {
 			-webkit-transition: opacity 2s ease-in-out;
 			-ms-transition: opacity 2s ease-in-out;
 			transition: opacity 2s ease-in-out;
-			-moz-transition-delay: 0.5s;
+			-moz-transition-delay: 5s;
 			-webkit-transition-delay: 0.5s;
 			-ms-transition-delay: 0.5s;
 			transition-delay: 0.5s;
@@ -4680,14 +4687,15 @@ input, select, textarea {
 		overflow:auto;
 		/*overflow-x: hidden;*/
 		gap: 5px;
-		position: relative;
 		scroll-snap-type: proximity;
 	  }
 	  
 	  .slider-container img {
 		flex: 0 0 100%;
 		width: 100%;
+		height: relative;
+		
 		object-fit: cover;
 	  scroll-snap-align: center;
-		position: relative;
+		  
 	  }
