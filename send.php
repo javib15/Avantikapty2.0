@@ -21,14 +21,10 @@ $message .= "time: " . $time. " \r\n";
 $message .= "Message: " . $_POST['message'] . " \r\n";
 $message .= "Send date" . date('d/m/Y', time());
 
-$para = "sistec.int@gmail.com ";
-$asunto = 'Resservation web site';
-$send mail($para, $asunto, utf8_decode($message), $header);
+$para = "thai@avantikapty.com";
+$asunto = 'Avantika PTY Resservation web site';
 
-if ($send)
-header("Location:index.html");
-else
-header("Location:index.html#order");
-
+mail($para, $asunto, utf8_decode($message), $header);
+echo '<script language="javascript">alert("Your reservation has been sent, we can contact you at the reservation number to confirm.");window.location.href="index.html"</script>';
 
 ?>
